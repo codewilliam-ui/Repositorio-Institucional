@@ -9,11 +9,11 @@
     <!--Fim Font Awesome-->
 
     <!--CSS do Cabeçalho-->
-
+    <link rel="stylesheet" href="assets/css/header.css">
     <!--Fim do CSS do Cabeçalho-->
 
     <!--Favicon do site-->
-
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
     <!--Fim do Favicon-->
 
     <!--CSS da página-->
@@ -21,7 +21,7 @@
     <!--Fim do CSS da página-->
 
     <!--Carrossel Splide (Framework)-->
-
+    <link rel="stylesheet" href="assets/css/splide.min.css">
     <!--Fim Carrossel Splide-->
 
     <title>Repositório de Trabalho de Conclusão de Curso</title>
@@ -60,7 +60,17 @@
         <div class="menu">
             <div class="logo">
                 <img src="assets/img/logo-white.svg" alt="">
+
             </div>
+            
+            <div class="seleção">
+                <ol>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#projetos">Recém Avaliados</a></li>
+                    <li><a href="#guia">Guia</a></li>
+                </ol>
+            </div>
+
             <div id="menuToggle">
                 <input type="checkbox" />
                 <span></span>
@@ -76,31 +86,15 @@
                 </ul>
             </div>
         </div>
+    </header>
 
-        <section class="banner">
-            <img src="" alt="">
-            <div class="overlay"></div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <section class="banner" id="home">
+        <picture>
+            <source media="(max-width: 720px)" srcset="assets\img\banner2.png">
+            <img src="assets/img/banner.png" alt="">
+        </picture>
+    </section>
+    
 
     <script src="assets/js/script.js"></script>
 </body>
