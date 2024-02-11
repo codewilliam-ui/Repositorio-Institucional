@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="assets/css/splide.min.css">
     <!--Fim Carrossel Splide-->
 
+    <!--Script do Carrossel Splide-->
+    <script src="assets/js/splide.min.js"></script>
+    <!--FIm do Script-->
+
     <title>Repositório de Trabalho de Conclusão de Curso</title>
 </head>
 <body>
@@ -65,8 +69,8 @@
             
             <div class="seleção">
                 <ol>
-                    <li><a href="#courses">Cursos</a></li>
-                    <li><a href="#projetos">Recém Avaliados</a></li>
+                    <li><a href="#image-carousel">Cursos</a></li>
+                    <li><a href="#projetos">Recentes</a></li>
                     <li><a href="#guia">Guia</a></li>
                 </ol>
             </div>
@@ -89,11 +93,156 @@
     </header>
 
     <section class="banner" id="home">
-        <picture>
-            <source media="(max-width: 720px)" srcset="assets\img\banner2.png">
-            <img src="assets/img/banner.png" alt="">
-        </picture>
+        <!-- <source media="(max-width: 720px)" srcset="assets\img\banner2.png">-->
+        <a href="http://www.freepik.com"><img src="assets/img/banner.png" alt="Designed by oxurra / Freepik"></a>
     </section>
+    <section id="image-carousel" class="splide" aria-label="courses">
+        <div class="splide__track">
+            <p class="selection">Escolha o Curso</p>
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/ADM.jpg" alt="" class="img-cr"></a>
+                        <div class="slide-title1">ADMINISTRAÇÃO</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/AGRO.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">AGRONOMIA</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/TADS.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">ANÁLISE DE SISTEMAS</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/CC.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">CIÊNCIAS CONTÁBEIS</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/DT.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">DIREITO</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/EF.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">EDUCAÇÃO FÍSICA</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/ENF.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">ENFERMAGEM</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/EC.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">ENGENHARIA CIVIL</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/FAR.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">FARMÁCIA</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/FIS.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">FISIOTERAPIA</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/RH.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">RECURSOS HUMANOS</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/MV.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">MEDICINA VETERINÁRIA</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/NT.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">NUTRIÇÃO</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/PD.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">PEDAGOGIA</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="#"><img src="assets/img/PS.png" alt="" class="img-cr"></a>
+                        <div class="slide-title">PSICOLOGIA</div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slide-content">
+                        <a href="html/selection.html"><img src="assets/img/TI.png" alt="" class="img-cr">
+                        <div class="slide-title">SISTEMAS DA INFORMAÇÃO </div>
+                    </div></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        drag: 'free',
+        cover: true,
+        focus: 'center',
+        gap: '0',
+        perPage: 3,
+        pagination: true,
+        perMove: 1,
+        snap: true,
+        autoplay: true,
+        autoScroll: {
+        speed: 1,
+        },
+        interval: number = 3300,
+        pauseOnHover: boolean = false,
+        keyboard: 'global',
+        lazyLoad: 'sequential',
+        
+        breakpoints: {
+        1500: {
+        perPage: 3,
+        height: '450',
+        },
+        1200: {
+        perPage: 2,
+        height: 'auto',
+        },
+        720: {
+        perPage: 1,
+        height: 'auto',
+        fixedWidth: 400,
+        fixedHeight: 550,
+        },
+        },
+    });
+    splide.mount();
+    splide.play();
+    </script>
+
+       
+       
     
 
     <script src="assets/js/script.js"></script>

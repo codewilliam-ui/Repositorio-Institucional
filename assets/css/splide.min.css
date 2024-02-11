@@ -26,6 +26,7 @@
  -ms-flex-pack: center;
  justify-content: center;
  margin: 0;
+ width: 5;
  pointer-events: none
 }
 
@@ -33,7 +34,7 @@
  display: inline-block;
  line-height: 1;
  list-style-type: none;
- margin: 0;
+ margin: 0px;
  pointer-events: auto
 }
 
@@ -42,7 +43,7 @@
 }
 
 .splide__progress__bar {
- width: 0
+ width: 0;
 }
 
 .splide {
@@ -205,6 +206,7 @@
  outline-offset: 3px
 }
 
+
 .splide__pagination {
  bottom: .5em;
  left: 0;
@@ -215,22 +217,21 @@
 }
 
 .splide__pagination__page {
- background: #ccc;
+ background: #012550a0;
  border: 0;
- border-radius: 0%;
+ border-radius: 50%;
  display: inline-block;
- height: 3px;
- margin: 0px;
- opacity: 0.9;
+ height: 1vw;
+ margin: 10px;
  padding: 0 7px;
  position: relative;
- transition: transform .2s linear;
- width: 8px
+ transition: transform .3s linear;
+ width: 1vw
 }
 
 .splide__pagination__page.is-active {
- background: #fff;
- transform: scale(1.4);
+ background: #000000;
+ transform: scale(1.2);
  z-index: 1
 }
 
@@ -240,8 +241,8 @@
 }
 
 .splide__pagination__page:focus-visible {
- outline: 3px solid #0bf;
- outline-offset: 3px
+ outline: 0 solid rgba(0, 187, 255, 0);
+ outline-offset: 0px
 }
 
 .splide.is-focus-in .splide__pagination__page:focus {
